@@ -35,23 +35,25 @@
     </svg>
     <div id="nebula" class="nebula"></div>
 </body>
-<script src='../javascripts/jquery.min.js'></script>
 <script src="../javascripts/d3.min.js" type="text/javascript"></script>
 <script src="../js/rAF.js" type="text/javascript"></script>
 <script src="../js/nebula.js"></script>
 <script>
-    Nebula({
-        ID: "#nebula",
-        W: $('#nebula').width(),
-        H: $('#nebula').height(),
-        radius: '55%',
-        ry: 0.2,
-        data1: ['建设雄安'],
-        data2: ['阿富汗自杀式袭击', '影院瞒报收入被罚'],
-        data3: ['C919首飞临近阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击', '中国建超级宽带网阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击',
-            '闯红灯将交警打昏阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击'
-        ]
-    });
+    window.onload = function (){
+        var nebulaStyle = getComputedStyle(document.querySelector("#nebula"));
+        Nebula({
+            ID: "#nebula",
+            W: parseFloat(nebulaStyle.width),
+            H: parseFloat(nebulaStyle.height),
+            radius: '55%',
+            ry: 0.2,
+            data1: ['建设雄安'],
+            data2: ['阿富汗自杀式袭击', '影院瞒报收入被罚'],
+            data3: ['C919首飞临近阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击', '中国建超级宽带网阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击',
+                '闯红灯将交警打昏阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击'
+            ]
+        });
+    }
 </script>
 
 </html>
