@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+      <title>index</title>
+
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="../css/custom-bootstrap.min.css">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+        <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <link rel="stylesheet" type="text/css" href="../libs/animate/animate.min.css" />
+      <link rel="stylesheet" href="../libs/amcharts3/plugins/export/export.css">
+      <link rel="stylesheet" type="text/css" href="../css/p1.css" />
+    </head>
+    <body>
+    <div id="tocenter" class="tocenter">
+      <div id="barChat" class="barChat">
+        <div class="BBtitle BBtitle2">
+          <span class="txt">全网各领域情况</span>
+          <span class="right"></span>
+        </div>
+        <div id="chatBox" class="chatBox"></div>
+      </div>
+      <div id="waring" class="waring">
+        <div id="midLeft" class="midLeft">
+            <!--<div class="arrow-left"></div>-->
+            <!--<img class="BD tl" src="../images/sBorder.svg">-->
+            <div id="titleLeft" class="titleLeft BBtitle BBtitle2">
+                <span class="txt">突发敏感信息预警</span>
+                <span class="right"></span>
+            </div>
+            <div class="warn-info all-box">
+                <ul>
+                    <li class="delay1 animated">
+                        <span class="arrow-lt"></span>
+                        <span class="arrow-lb"></span>
+                        <span class="arrow-rt"></span>
+                        <span class="arrow-rb"></span>
+                        <a href="#">习近平这样谋划京津冀协同发展</a>
+                        <p class="warnDetail">十八大以来，习近平总书记以新发展理念为指引，系统布局我国区域发展"三大战略"，京津冀协同发展就是其中之一。新华社《学习进行时》原创品牌栏目“讲习所”今天推出文章......</p>
+                    </li>
+                    <li class="delay1 animated">
+                        <span class="arrow-lt"></span>
+                        <span class="arrow-lb"></span>
+                        <span class="arrow-rt"></span>
+                        <span class="arrow-rb"></span>
+                        <a href="#">习近平这样谋划京津冀协同发展</a>
+                        <p class="warnDetail">十八大以来，习近平总书记以新发展理念为指引，系统布局我国区域发展"三大战略"，京津冀协同发展就是其中之一。新华社《学习进行时》原创品牌栏目“讲习所”今天推出文章......</p>
+                    </li>
+                    <li class="delay1 animated">
+                        <span class="arrow-lt"></span>
+                        <span class="arrow-lb"></span>
+                        <span class="arrow-rt"></span>
+                        <span class="arrow-rb"></span>
+                        <a href="#">习近平这样谋划京津冀协同发展</a>
+                        <p class="warnDetail">十八大以来，习近平总书记以新发展理念为指引，系统布局我国区域发展"三大战略"，京津冀协同发展就是其中之一。新华社《学习进行时》原创品牌栏目“讲习所”今天推出文章......</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="midRight" class="midRight"></div>
+      </div>
+      <div id="maps" class="maps">
+        <img src="../images/continents.png" class="bgimg" />
+        <div class='title'>》境外涉华地区《</div>
+        <div id="c1" class="continentName c1">
+          <p id="MapNum1" class="num">0</p>
+          <p class="name">亚太</p>
+        </div>
+        <div id="c2" class="continentName c2">
+          <p id="MapNum2" class="num">0</p>
+          <p class="name">拉美</p>
+        </div>
+        <div id="c3" class="continentName c3">
+          <p  id="MapNum3" class="num">0</p>
+          <p class="name">欧洲</p>
+        </div>
+        <div id="c4" class="continentName c4">
+          <p  id="MapNum4" class="num">0</p>
+          <p class="name">美国</p>
+        </div>
+        <div id="c5" class="continentName c5">
+          <p  id="MapNum5" class="num">0</p>
+          <p class="name">港台</p>
+        </div>
+      </div>
+      <div id="wordChat" class="wordChat">
+        <div class="arrow-left"></div>
+        <div class="BBtitle BBtitle2 titleLeft">
+            <span>重点人员</span>
+            <span class="right"></span>
+            <div class="all-box">
+                <div id="tagCloud" class="tagCloud" style="width:5rem;height:2.8rem"></div>
+            </div>
+        </div>
+      </div>
+      <div id="news" class="news">
+        <div id="publicCulture" class="publicCulture">
+                <!--<img class="BD tl" src="../images/sBorder.svg">-->
+                <div class="BBtitle BBtitle2 titleLeft">
+                    <span>宣传文化</span>
+                    <span class="right"></span>
+                </div>
+                <div class="all-box">
+                    <div id="cultureContainer" class="cultureContainer">
+                        <div style="position:absolute;">
+                            <span class="arrow-left"></span>
+                            <span class="arrow-right"></span>
+                            <ol>
+                                <li id="list_1" class="hover">
+                                    新闻出版
+                                </li>
+                                <li id="list_2">文化文艺</li>
+                                <li id="list_3">网络宣传管理</li>
+                                <li id="list_4">社科理论</li>
+                                <li id="list_5">广播电视</li>
+                            </ol>
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="border-lt"></span>
+                                <span class="border-lb"></span>
+                                <span class="border-rb"></span>
+                                <span class="arrow-r"></span>
+                                <a href="#"><b>1</b>国务院批准这些地方撤县设市:一字之差变化巨大</a>
+                            </li>
+                            <li>
+                                <span class="border-lt"></span>
+                                <span class="border-lb"></span>
+                                <span class="border-rb"></span>
+                                <span class="arrow-r"></span>
+                                <a href="#"><b>2</b>国务院批准这些地方撤县设市:一字之差变化巨大</a>
+                            </li>
+                            <li><span class="border-lt"></span>
+                                <span class="border-lb"></span>
+                                <span class="border-rb"></span>
+                                <span class="arrow-r"></span>
+                                <a href="#"><b>3</b>国务院批准这些地方撤县设市:一字之差变化巨大</a>
+                            </li>
+                            <li><span class="border-lt"></span>
+                                <span class="border-lb"></span>
+                                <span class="border-rb"></span>
+                                <span class="arrow-r"></span>
+                                <a href="#"><b>4</b>国务院批准这些地方撤县设市:一字之差变化巨大</a>
+                            </li>
+                            <li><span class="border-lt"></span>
+                                <span class="border-lb"></span>
+                                <span class="border-rb"></span>
+                                <span class="arrow-r"></span>
+                                <a href="#"><b>5</b>国务院批准这些地方撤县设市:一字之差变化巨大</a>
+                            </li>
+                            <li><span class="border-lt"></span>
+                                <span class="border-lb"></span>
+                                <span class="border-rb"></span>
+                                <span class="arrow-r"></span>
+                                <a href="#"><b>6</b>国务院批准这些地方撤县设市:一字之差变化巨大</a>
+                            </li>
+                            <li><span class="border-lt"></span>
+                                <span class="border-lb"></span>
+                                <span class="border-rb"></span>
+                                <span class="arrow-r"></span>
+                                <a href="#"><b>7</b>国务院批准这些地方撤县设市:一字之差变化巨大</a>
+                            </li>
+                            <li><span class="border-lt"></span>
+                                <span class="border-lb"></span>
+                                <span class="border-rb"></span>
+                                <span class="arrow-r"></span>
+                                <a href="#"><b>8</b>国务院批准这些地方撤县设市:一字之差变化巨大</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+      </div>
+
+      <svg id="svgline2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" width="1920" height="1080" viewBox="0 0 1920 1080">
+        <defs>
+          <style>
+            .cls-1 {
+              stroke: #FAFCD1;
+              stroke-width: 0.25px;
+              filter: url(#outer-glow-1);
+              fill: none;
+              opacity: 0.5;
+              fill-rule: evenodd;
+            }
+          </style>
+
+          <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha"/>
+            <feComposite/>
+            <feComposite/>
+            <feComposite result="outerGlowBlur"/>
+            <feFlood flood-color="#FAFCD1"/>
+            <feComposite operator="in" in2="outerGlowBlur"/>
+            <feBlend in2="SourceGraphic" result="outerGlow"/>
+            <feComposite in="SourceGraphic" result="shadowed"/>
+          </filter>
+        </defs>
+        <path id="path1" d="M60.000,46.000 L60.000,274.000 L86.000,292.000 L801.000,292.000 L823.000,320.000 L1841.000,320.000 L1854.000,325.000 L1854.000,376.000" class="cls-1"/>
+        <path id="path2" d="M944.000,525.000 L944.000,578.000 L840.000,682.000 L786.000,682.000 L768.000,708.000 L61.000,708.000 L61.000,784.000 L61.000,1064.000 L1289.000,1064.000 L1310.000,1037.000 L1340.000,1037.000 L1360.000,1062.000 L1911.000,1062.000 " class="cls-1"/>
+      </svg>
+    </div>
+    </body>
+    <script src='../javascripts/jquery.min.js'></script>
+    <script src="../js/rAF.js" type="text/javascript"></script>
+    <script src="../javascripts/d3.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../libs/amcharts3/amcharts.js"></script>
+    <script type="text/javascript"  src="../libs/amcharts3/serial.js"></script>
+    <script src="../js/countUp.min.js"></script>
+    <script src='../js/echarts_v3.js'></script>
+    <script src="../js/echarts-wordcloud.min.js"></script>
+    <script type="text/javascript" src="../js/p2.js"></script>
+</html>

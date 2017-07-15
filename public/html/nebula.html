@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>星云</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/nebula.css">
+</head>
+
+<body>
+    <svg id="svgline1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" width="1920" height="1080" viewBox="0 0 1920 1080">
+        <defs>
+            <filter id="f1">
+                <feGaussianBlur stdDeviation="1.4" in="SourceAlpha" />
+                <feComposite/>
+                <feComposite/>
+                <feComposite result="outerGlowBlur" />
+                <feFlood flood-color="#31698E" flood-opacity="0.66" />
+                <feComposite operator="in" in2="outerGlowBlur" />
+                <feBlend in2="SourceGraphic" result="outerGlow" />
+                <feComposite in="SourceGraphic" result="shadowed" />
+            </filter>
+            <filter id="f2">
+                <feGaussianBlur stdDeviation="1.4" in="SourceAlpha" />
+                <feComposite/>
+                <feComposite/>
+                <feComposite result="outerGlowBlur" />
+                <feFlood flood-color="#BCA37B" flood-opacity="0.66" />
+                <feComposite operator="in" in2="outerGlowBlur" />
+                <feBlend in2="SourceGraphic" result="outerGlow" />
+                <feComposite in="SourceGraphic" result="shadowed" />
+            </filter>
+            <defs>
+    </svg>
+    <div id="nebula" class="nebula"></div>
+</body>
+<script src='../javascripts/jquery.min.js'></script>
+<script src="../javascripts/d3.min.js" type="text/javascript"></script>
+<script src="../js/rAF.js" type="text/javascript"></script>
+<script src="../js/nebula.js"></script>
+<script>
+    Nebula({
+        ID: "#nebula",
+        W: $('#nebula').width(),
+        H: $('#nebula').height(),
+        radius: '55%',
+        ry: 0.2,
+        data1: ['建设雄安'],
+        data2: ['阿富汗自杀式袭击', '影院瞒报收入被罚'],
+        data3: ['C919首飞临近阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击', '中国建超级宽带网阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击',
+            '闯红灯将交警打昏阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击阿富汗自杀式袭击'
+        ]
+    });
+</script>
+
+</html>

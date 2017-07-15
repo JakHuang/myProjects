@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="741" height="342" viewBox="0 0 741 342">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #4daeff;
+        stroke-width: 0.5px;
+        filter: url(#filter-chain-1);
+        fill: none;
+        opacity: 0.5;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #2d688f;
+      }
+    </style>
+
+    <filter id="filter-chain-1" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="1.5" in="SourceAlpha"/>
+      <feComposite/>
+      <feComposite/>
+      <feComposite result="outerGlowBlur"/>
+      <feFlood flood-color="#0096ff"/>
+      <feComposite operator="in" in2="outerGlowBlur"/>
+      <feBlend in2="SourceGraphic" result="outerGlow"/>
+      <feComposite in="SourceGraphic" result="shadowed"/>
+      <feGaussianBlur stdDeviation="2.333" in="SourceAlpha" result="innerGlowBlur"/>
+      <feFlood flood-color="#0078ff" flood-opacity="0.35"/>
+      <feComposite operator="out" in2="innerGlowBlur"/>
+      <feComposite operator="in" in2="SourceAlpha"/>
+      <feBlend mode="screen" in2="shadowed" result="innerGlow"/>
+    </filter>
+  </defs>
+  <g>
+    <path d="M13.500,341.500 L13.500,33.500 L39.500,12.500 L660.500,12.500 L660.500,315.500 " class="cls-1"/>
+    </g>
+</svg>
